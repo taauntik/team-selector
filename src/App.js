@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import { useEffect, useState } from "react";
 import Team from "./components/Team/Team";
@@ -15,7 +15,7 @@ function App() {
     )
       .then((res) => res.json())
       .then((data) => setTeams(data.teams));
-  }, []);
+  }, [teams]);
   return (
     <Router>
       <Switch>
