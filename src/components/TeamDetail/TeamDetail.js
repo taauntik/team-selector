@@ -14,7 +14,7 @@ import female from "../../Photo/female.png";
 import "./TeamDetail.css";
 
 function TeamDetail() {
-  const { id } = useParams();
+const { id } = useParams();
   console.log(id);
   const [Details, setDetails] = useState([]);
   console.log(Details);
@@ -69,13 +69,13 @@ function TeamDetail() {
       </div>
       <div className="social-icons">
         <div>
-          <a _blank href={`https://${strFacebook}`}>
+          <a href={`https://${strFacebook}`}>
             <i className="fab fa-facebook"></i>
           </a>
-          <a _blank href={`https://${strInstagram}`}>
-            <i class="fab fa-instagram"></i>
+          <a href={`https://${strInstagram}`}>
+            <i className="fab fa-instagram"></i>
           </a>
-          <a _blank href={`https://${strTwitter}`}>
+          <a href={`https://${strTwitter}`}>
             <i className="fab fa-twitter"></i>
           </a>
         </div>
